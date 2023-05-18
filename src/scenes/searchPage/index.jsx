@@ -116,7 +116,7 @@ const SearchPage = () => {
     </Stack>
   );
 
-  if (isLoading && users.length === 0) {
+  if (isLoading && posts.length === 0) {
     element = (
       <Box
         width={"100%"}
@@ -130,7 +130,7 @@ const SearchPage = () => {
     );
   }
 
-  if (!users?.length && !isLoading) {
+  if (!posts?.length && !isLoading) {
     element = (
       <WidgetWrapper>
         <Typography
